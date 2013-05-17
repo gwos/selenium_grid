@@ -1,0 +1,33 @@
+{
+  "capabilities":
+      [
+        {
+          "browserName": "firefox",
+          "version": "15",
+          "platform": "LINUX",
+          "maxInstances": 2,
+          "firefox_binary": "/home/ubuntu/firefox/firefox"
+        },
+        {
+          "browserName": "chrome",
+          "platform": "LINUX",
+          "maxInstances": 2
+        }
+      ],
+    "configuration":
+        {
+        "nodeTimeout":2000,
+        "port":5555,
+
+        "hubPort":4444,
+        "hubHost":"localhost",
+
+        "nodePolling":2000,
+
+        "registerCycle":10000,
+        "register":true,
+        "cleanUpCycle":2000,
+        "timeout":30000,
+        "maxSession":5,
+        }
+}
